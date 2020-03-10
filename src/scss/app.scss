@@ -1,0 +1,14 @@
+$main-color: blue;
+
+body {
+  color: yellow;
+}
+
+a {
+  color: red;
+}
+
+.btn-primary {
+  background-color: $main-color;
+  border-color: darken($main-color, 50%);
+}

@@ -1,2 +1,7 @@
 node_modules
 dist
+src/css
+
+#exclude IDEs metadata
+.vscode
+.idea
