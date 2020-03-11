@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 /** @type {import('webpack').Configuration} */
 const config = {
@@ -8,6 +10,10 @@ const config = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new webpack.BannerPlugin({
+      banner: 'Copyright 2020 Nous',
+    }),
+    new MiniCssExtractPlugin(),
   ],
   module: {
     rules: [
@@ -15,12 +21,19 @@ const config = {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          'style-loader',
+          MiniCssExtractPlugin.loader,
+          'css-loader',
           // Translates CSS into CommonJS
           'css-loader',
           // Compiles Sass to CSS
           'sass-loader',
         ],
+      },
+      {
+        // make all files ending in .json5 use the `json5-loader`
+        test: /\.json5$/,
+        use: 'json5-loader',
+        type: 'javascript/auto',
       },
     ],
   },
