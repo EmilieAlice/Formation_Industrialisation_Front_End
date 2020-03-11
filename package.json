@@ -22,8 +22,11 @@
   },
   "scripts": {
     "serve": "live-server dist",
+    "serve:src": "webpack-dev-server --mode development",
     "prettier": "prettier **/*.{js,html,css,scss,md,ts,json} --write",
     "lint:html": "htmlhint",
+    "build:scss": "node-sass --source-map true --recursive --output src/css src/scss",
+    "watch:scss": "nodemon --ext scss --exec npm run build:scss",
     "build:dev": "webpack --mode development",
     "build:prod": "npm run lint:html & webpack --mode production"
   },
