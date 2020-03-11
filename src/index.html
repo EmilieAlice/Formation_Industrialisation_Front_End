@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" type="css" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Hello, world!</title>
   </head>
-  <body class="border border-dark rounded-0">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Mon site vitrine</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Introduction</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Présentation</a>
+            <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -30,75 +28,74 @@
         </ul>
       </div>
     </nav>
-    <div class="border border-dark rounded-0 jumbotron bg-secondary text-white text-center">
-      <h1 class="display-4">Un super site!</h1>
-      <p class="lead">Et son pas si mauvais slogan...</p>
-      <button type="button" class="btn btn-light">Contact</button>
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
+        or information.
+      </p>
+      <hr class="my-4" />
+      <p>
+        It uses utility classes for typography and spacing to space content out within the larger container.
+      </p>
+      <button class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#modal">
+        Learn more
+      </button>
     </div>
-    <!--.container>.row>.col*3>lorem-->
-    <div class="container-fluid">
+    <!-- EMMET https://emmet.io/ -->
+    <!-- .container>.row>.col*3>lorem -->
+    <div class="container">
       <div class="row">
-        <div class="col text-center">
-          <h1 class="text-hide" style="background-image: url('...');">
-            Bootstrap
-          </h1>
-          <p>1 colonne sur 1/3</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium dolorum cupiditate assumenda voluptates
-            maiores temporibus molestiae deserunt doloremque, nesciunt dolores provident voluptatibus saepe neque labore
-            minus ut illo tenetur sunt.
-          </p>
-          <p><a class="nav-link" href="#">un lien</a></p>
+        <div class="col-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio modi nisi magni, veniam doloremque
+          quisquam libero laudantium dignissimos incidunt neque inventore voluptates aliquid, minima iste fugit officia
+          ea sunt.
         </div>
-        <div class="col text-center">
-          <h1 class="text-hide" style="background-image: url('...');">
-            Bootstrap
-          </h1>
-          <p>1 colonne sur 1/3</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dignissimos suscipit fugiat natus doloremque
-            totam eligendi asperiores vitae assumenda! Incidunt sint at nisi in veritatis ea deserunt enim, cumque
-            distinctio.
-          </p>
-          <p><a class="nav-link" href="#">un lien</a></p>
+        <div class="col-sm">
+          <p>Prénom : <input class="prenom" /></p>
+          <p class="output"></p>
         </div>
-        <div class="col text-center">
-          <h1 class="text-hide" style="background-image: url('...');">
-            Bootstrap
-          </h1>
-          <p>1 colonne sur 1/3</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laboriosam esse nam natus mollitia maiores
-            eos nisi facere ratione, quaerat est eligendi ducimus repellat reprehenderit sit nulla provident vel harum.
-          </p>
-          <p><a class="nav-link" href="#">un lien</a></p>
+        <div class="col-sm">
+          Praesentium tempore ut ipsam facere maxime totam esse voluptatibus. Qui tempora earum quisquam suscipit. Ipsa
+          eos laudantium maxime, odit nemo cupiditate repudiandae tempora libero nostrum neque. Laboriosam minus alias
+          magnam.
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-1">
+          Molestias, accusamus provident, officia voluptates laborum explicabo voluptatum facere non ea eligendi earum
+          at? Maiores atque delectus fugiat ullam officia laudantium expedita doloremque necessitatibus alias? Quae hic
+          rerum ipsam tempora.
+        </div>
+        <div class="col">
+          Praesentium tempore ut ipsam facere maxime totam esse voluptatibus. Qui tempora earum quisquam suscipit. Ipsa
+          eos laudantium maxime, odit nemo cupiditate repudiandae tempora libero nostrum neque. Laboriosam minus alias
+          magnam.
         </div>
       </div>
     </div>
-    <div class="container-fluid border border-dark rounded-0 bg-secondary text-white text-center align-middle">
-      <div class="row">
-        <div class="col-3 text-center">
-          <p>1 colonne sur 1/4</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tenetur amet! Dolor, inventore ad
-            expedita eum soluta repudiandae veniam alias nisi facere delectus unde laborum culpa enim itaque ex
-            distinctio?
-          </p>
-        </div>
-        <div class="col text-center">
-          <p>1 colonne sur 3/4</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laboriosam velit delectus ad totam
-            provident ipsum distinctio rerum voluptatum porro nostrum ipsam nesciunt harum esse, quaerat voluptate iste
-            earum non.
-          </p>
+
+    <div class="modal fade" id="modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="../node_modules/bootstrap/dist/css/bootstrap.css"></script>
   </body>
 </html>
